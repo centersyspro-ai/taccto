@@ -688,8 +688,10 @@ body {
 }
 
 .logo-image {
-    height: 120px; 
-    width: 480px;
+    height: auto;          /* Permite que la altura se ajuste proporcionalmente */
+    width: 100%;           /* Ocupa el ancho disponible del contenedor */
+    max-width: 180px;      /* Ajusta este número (150px, 180px, 200px) hasta que el tamaño se vea correcto en tu barra de navegación */
+    display: block;
     transition: all 0.3s ease;
 }
 
