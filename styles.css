@@ -334,8 +334,6 @@ body {
     font-size: 1.2rem;
 }
 
-
-
 /* Showcase Section */
 .showcase {
     padding: 80px 0;
@@ -366,7 +364,7 @@ body {
 }
 
 .featured-app {
-    width: auto%;
+    width: auto;
     height: 600px;
     border-radius: 15px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.15);
@@ -409,7 +407,7 @@ body {
     font-weight: 600;
 }
 
-/* Responsive */
+/* Responsive Showcase */
 @media (max-width: 768px) {
     .showcase {
         padding: 60px 0;
@@ -438,9 +436,6 @@ body {
         gap: 1.5rem;
     }
 }
-
-
-
 
 /* Conversion Showcase Section */
 .conversion-showcase {
@@ -543,7 +538,7 @@ body {
     margin: 0;
 }
 
-/* Responsive */
+/* Responsive Conversion */
 @media (max-width: 968px) {
     .conversion-grid {
         grid-template-columns: 1fr;
@@ -574,8 +569,6 @@ body {
         text-align: center;
     }
 }
-
-
 
 /* Pricing Badges */
 .pricing-badge {
@@ -630,10 +623,6 @@ body {
     font-size: 0.9rem;
 }
 
-
-
-
-
 /* Hero Visual con Imagen Real */
 .hero-visual {
     display: flex;
@@ -655,7 +644,7 @@ body {
     transform: scale(1.05);
 }
 
-/* Ajuste responsive */
+/* Ajuste responsive Hero */
 @media (max-width: 768px) {
     .hero-app-image {
         max-width: 85%;
@@ -665,9 +654,6 @@ body {
         margin-top: 2rem;
     }
 }
-
-
-
 
 /* Main Header con Logo */
 .main-header {
@@ -688,9 +674,9 @@ body {
 }
 
 .logo-image {
-    height: auto;          /* Permite que la altura se ajuste proporcionalmente */
-    width: 100%;           /* Ocupa el ancho disponible del contenedor */
-    max-width: 180px;      /* Ajusta este número (150px, 180px, 200px) hasta que el tamaño se vea correcto en tu barra de navegación */
+    height: auto;
+    width: 100%;
+    max-width: 180px;
     display: block;
     transition: all 0.3s ease;
 }
@@ -702,25 +688,23 @@ body {
 
 /* Ajustar el hero para el header fijo */
 .hero {
-    margin-top: 90px; /* Compensa el header fijo */
+    margin-top: 90px;
 }
 
-/* Responsive */
+/* Responsive Header */
 @media (max-width: 768px) {
     .main-header {
         padding: 1rem 0;
     }
     
     .logo-image {
-        height: 28px; /* Un poco más pequeño en móviles */
+        max-width: 140px; /* Consistencia en móviles en vez de altura fija */
     }
     
     .hero {
         margin-top: 80px;
     }
 }
-
-
 
 /* WhatsApp Flotante */
 .whatsapp-float {
@@ -764,12 +748,11 @@ body {
     100% { transform: scale(1); }
 }
 
-
-.whatsapp-text {
-        display: none; /* Solo muestra el icono en móviles */
+@media (max-width: 768px) {
+    .whatsapp-text {
+        display: none;
     }
 }
-
 
 .contact-options {
     display: flex;
@@ -819,7 +802,7 @@ body {
     opacity: 0.9;
 }
 
-/* Responsive */
+/* Responsive Contact Options */
 @media (max-width: 480px) {
     .contact-options {
         flex-direction: column;
@@ -831,12 +814,9 @@ body {
     }
 }
 
-
-
 .section-spacing {
-    margin-bottom: 2em; /* Esto genera un espacio vertical equivalente a dos líneas de texto */
+    margin-bottom: 2em;
 }
-
 
 /* Sección de Ubicación con google maps*/
 .location-section {
@@ -899,7 +879,7 @@ body {
     margin: 0;
 }
 
-/* Responsive */
+/* Responsive Location */
 @media (max-width: 768px) {
     .location-info {
         grid-template-columns: 1fr;
@@ -910,4 +890,3 @@ body {
         flex-direction: column;
     }
 }
-
