@@ -688,8 +688,8 @@ body {
 }
 
 .logo-image {
-    height: 32px; /* Exactamente tu tamaño */
-    width: auto;
+    height: 120px; 
+    width: 480px;
     transition: all 0.3s ease;
 }
 
