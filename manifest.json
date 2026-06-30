@@ -1,8 +1,8 @@
 {
-  "name": "Android para todos - Centrosys",
-  "short_name": "WebToApp",
+  "name": "Android para todos - Taccto",
+  "short_name": "Taccto PWA",
   "description": "Creamos tu página web y App Android de tu negocio.",
-  "start_url": "/index.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#25d366",
