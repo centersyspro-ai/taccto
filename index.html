@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Estilos de control para el logotipo y los botones flotantes coordinados -->
+    <!-- Estilos de control para el logotipo, calendarios y botones flotantes coordinados -->
     <style>
         /* Ajuste responsivo del encabezado y logotipo */
         .main-header {
@@ -32,27 +32,43 @@
             align-items: center;
         }
         .main-header .logo-image {
-            width: 85% !important;          /* En celular ocupa el 85% del ancho de la pantalla */
-            max-width: 320px !important;    /* Tope en celulares para que no se pixele ni desborde */
-            height: auto !important;        /* Mantiene la proporción original sin aplastarse */
-            max-height: none !important;    /* Anula cualquier límite de altura de styles.css */
+            width: 85% !important;
+            max-width: 320px !important;
+            height: auto !important;
+            max-height: none !important;
             object-fit: contain;
             display: block;
         }
 
-        /* Tamaño aún más amplio en tablets y PC */
         @media (min-width: 768px) {
             .main-header .logo-image {
                 max-width: 420px !important;
             }
         }
 
+        /* Tamaño equilibrado en celular y punto medio en PC para calendarios */
+        .calendar-showcase-img {
+            display: block;
+            width: 92% !important;
+            max-width: 480px !important;
+            height: auto !important;
+            margin: 18px auto !important;
+            border-radius: 10px;
+            object-fit: contain;
+        }
+
+        @media (min-width: 768px) {
+            .calendar-showcase-img {
+                max-width: 680px !important;
+            }
+        }
+
         .pwa-install-container {
             position: fixed;
-            bottom: 85px; /* Se posiciona exactamente arriba del botón de WhatsApp */
+            bottom: 85px;
             right: 20px;
             z-index: 99998;
-            display: none; /* Oculto por defecto hasta que sea instalable */
+            display: none;
         }
         .pwa-horizontal-btn {
             background-color: #25d366;
@@ -79,7 +95,6 @@
             fill: currentColor;
         }
 
-        /* Estilos base del nuevo botón de WhatsApp alargado */
         .whatsapp-btn {
             position: fixed;
             bottom: 20px;
@@ -133,7 +148,7 @@
       </video>
     </div>
 
-    <img src="fotos/calendarpng.png" alt="calendario de citas" class="showcase-img">
+    <img src="fotos/calendarpng.png" alt="calendario de citas" class="calendar-showcase-img">
 
     <section class="showcase">
         <div class="container">
@@ -194,7 +209,7 @@
                  <img src="fotos/scanning_qr.png" alt="escaneando codigo qr" class="showcase-img">
                </div>
             </div>
-            <img src="fotos/calendarjpg.jpg" alt="calendario de citas en tu web" class="showcase-img">
+            <img src="fotos/calendarjpg.jpg" alt="calendario de citas en tu web" class="calendar-showcase-img">
         </div>
     </section>
 
